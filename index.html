@@ -22,18 +22,18 @@
   <body>
     <!-- #region Top Line -->
     <header class="header">
-      <div class="container mobile">
+      <div class="container">
         <nav class="page-nav">
           <a href="./index.html" class="logo-link"
             >Web<span class="logo-link-last">Studio</span></a
           >
-          <ul class="link-list mobile">
+          <ul class="link-list menu">
             <li><a href="./index.html" class="link studio">Studio</a></li>
             <li><a href="" class="link">Portfolio</a></li>
             <li><a href="" class="link">Contacts</a></li>
           </ul>
         </nav>
-        <address class="address-list mobile">
+        <address class="address-list adr-menu">
           <ul class="address-li">
             <li class="address-link">
               <a href="mailto:info@devstudio.com" class="link"
@@ -45,12 +45,76 @@
             </li>
           </ul>
         </address>
-        <button type="button" class="nav-mobile">
-          <svg class="nav-mobile-icon" width="24" height="24">
+        <button type="button" class="menu-button">
+          <svg width="24" height="24" class="menu-icon">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
+      <!-- #region Menu Mobile -->
+      <div class="menu-overlay">
+        <div class="menu-modal">
+          <button type="button" class="close-menu">
+            <svg class="close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu">
+            <ul class="link-list-menu">
+              <li>
+                <a href="./index.html" class="link-menu studio">Studio</a>
+              </li>
+              <li><a href="" class="link-menu">Portfolio</a></li>
+              <li><a href="" class="link-menu">Contacts</a></li>
+            </ul>
+          </nav>
+          <address class="address-list-menu">
+            <ul class="address-li-menu">
+              <li class="address-link-menu">
+                <a href="mailto:info@devstudio.com" class="link-menu"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address-link-menu">
+                <a href="tel:+110001111111" class="link-menu"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="social-links-menu">
+            <li class="social-item-menu">
+              <a href="#" class="icon">
+                <svg width="24" height="24" class="social-menu">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item-menu">
+              <a href="#" class="icon">
+                <svg width="24" height="24" class="social-menu">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item-menu">
+              <a href="#" class="icon">
+                <svg width="24" height="24" class="social-menu">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item-menu">
+              <a href="#" class="icon">
+                <svg width="24" height="24" class="social-menu">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- #endregion Menu Mobile -->
     </header>
     <!-- #endregion Top Line -->
     <main>
@@ -128,7 +192,11 @@
           <ul class="team-list">
             <li class="team-li">
               <img
-                src="./images/imgmark.jpg"
+                srcset="
+                  ./images/onex/imgmarkonex.jpg 1x,
+                  ./images/twox/imgmarktwox.jpg 2x
+                "
+                src="./images/onex/imgmarkonex.jpg"
                 alt="Mark Guerrero"
                 width="264"
                 class="team-photo"
@@ -170,7 +238,11 @@
             </li>
             <li class="team-li">
               <img
-                src="./images/imgtom.jpg"
+                srcset="
+                  ./images/onex/imgtomonex.jpg 1x,
+                  ./images/twox/imgtomtwox.jpg 2x
+                "
+                src="./images/onex/imgtomonex.jpg"
                 alt="Tom Ford"
                 width="264"
                 class="team-photo"
@@ -212,7 +284,11 @@
             </li>
             <li class="team-li">
               <img
-                src="./images/imgcamila.jpg"
+                srcset="
+                  ./images/onex/imgcamilaonex.jpg 1x,
+                  ./images/twox/imgcamilatwox.jpg 2x
+                "
+                src="./images/onex/imgcamilaonex.jpg"
                 alt="Camila Garcia"
                 width="264"
                 class="team-photo"
@@ -254,7 +330,11 @@
             </li>
             <li class="team-li">
               <img
-                src="./images/imgdaniel.jpg"
+                srcset="
+                  ./images/onex/imgdanielonex.jpg 1x,
+                  ./images/twox/imgdanieltwox.jpg 2x
+                "
+                src="./images/onex/imgdanielonex.jpg"
                 alt="Daniel Wilson"
                 width="264"
                 class="team-photo"
@@ -306,10 +386,12 @@
             <li class="portfolio-li">
               <div class="pf-box">
                 <img
-                  class="pf-image"
-                  src="./images/imgbankingapp.jpg"
+                  srcset="
+                    ./images/onex/imgbankingapponex.jpg 1x,
+                    ./images/twox/imgbankingapptwox.jpg 2x
+                  "
+                  src="./images/onex/imgbankingapponex.jpg"
                   alt="Banking App"
-                  width="360"
                 />
                 <p class="pf-overlay overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -325,10 +407,12 @@
             <li class="portfolio-li">
               <div class="pf-box">
                 <img
-                  class="pf-image"
-                  src="./images/imgcashlesspayment.jpg"
+                  srcset="
+                    ./images/onex/imgcashlesspaymentonex.jpg 1x,
+                    ./images/twox/imgcashlesspaymenttwox.jpg 2x
+                  "
+                  src="./images/onex/imgcashlesspaymentonex.jpg"
                   alt="Cashless Payment"
-                  width="360"
                 />
                 <p class="pf-overlay overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -344,10 +428,12 @@
             <li class="portfolio-li">
               <div class="pf-box">
                 <img
-                  class="pf-image"
-                  src="./images/imgmeditationapp.jpg"
+                  srcset="
+                    ./images/onex/imgmeditationapponex.jpg 1x,
+                    ./images/twox/imgmeditationapptwox.jpg 2x
+                  "
+                  src="./images/onex/imgmeditationapponex.jpg"
                   alt="Meditation App"
-                  width="360"
                 />
                 <p class="pf-overlay overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -363,10 +449,12 @@
             <li class="portfolio-li">
               <div class="pf-box">
                 <img
-                  class="pf-image"
-                  src="./images/imgtaxiservice.jpg"
+                  srcset="
+                    ./images/onex/imgtaxiserviceonex.jpg 1x,
+                    ./images/twox/imgtaxiservicetwox.jpg 2x
+                  "
+                  src="./images/onex/imgtaxiserviceonex.jpg"
                   alt="Taxi Service"
-                  width="360"
                 />
                 <p class="pf-overlay overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -382,10 +470,12 @@
             <li class="portfolio-li">
               <div class="pf-box">
                 <img
-                  class="pf-image"
-                  src="./images/imgscreenillustrations.jpg"
+                  srcset="
+                    ./images/onex/imgscreenillustrationsonex.jpg 1x,
+                    ./images/twox/imgscreenillustrationstwox.jpg 2x
+                  "
+                  src="./images/onex/imgscreenillustrationsonex.jpg"
                   alt="Screen Illustrations"
-                  width="360"
                 />
                 <p class="pf-overlay overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -401,10 +491,12 @@
             <li class="portfolio-li">
               <div class="pf-box">
                 <img
-                  class="pf-image"
-                  src="./images/imgonlinecourses.jpg"
+                  srcset="
+                    ./images/onex/imgonlinecoursesonex.jpg 1x,
+                    ./images/twox/imgonlinecoursestwox.jpg 2x
+                  "
+                  src="./images/onex/imgonlinecoursesonex.jpg"
                   alt="Online Courses"
-                  width="360"
                 />
                 <p class="pf-overlay overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -434,7 +526,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div>
+        <div class="media-box">
           <p class="social-media">Social media</p>
           <ul class="social-links-footer">
             <li class="social-item-footer">
@@ -566,8 +658,10 @@
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="#" class="form-policy">Privacy Policy</a></label
+              <p class="label-text">
+                I accept the terms and conditions of the
+                <a href="#" class="form-policy">Privacy Policy</a>
+              </p></label
             >
           </div>
           <button type="submit" class="form-button">Send</button>
